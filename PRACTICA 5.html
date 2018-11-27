@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <title>Entrega 3-M8-UF5</title>
+    <meta name="author" content="Oriol Sayeras">
+    <meta name="description" content="Això és una entrega">
+    <meta name="keywords" content="Smx2 Educem_net">
+    <meta charset="utf-8">
+    <!--<link rel="shortcut icon" href="./logo.png">-->
+</head>
+
+<body>
+    <header align="center">
+        <h1>Registre d'alumnes</h1>
+    </header>
+    <form action="mailto:dgonzalez@educem.com?subject=entrega4-m8-uf5" enctype="text/plain" method="POST">
+        <table align="center">
+            <tr align="left">
+                <th>
+                    <label for="idnom">Nom:</label>
+                </th>
+                <td>
+                    <input id="idnom" type="text" name="nom" placeholder="Escriu el teu nom" size="60" maxlength="20"
+                        autofocus required>
+                </td>
+            </tr>
+            <tr align="left">
+                <th>
+                    <label for="idcognom">Cognoms:</label>
+                </th>
+                <td>
+                    <input id="idcognom" type="text" name="cognom" placeholder="Escriu el teu cognom" size="60"
+                        maxlength="80" required>
+                </td>
+            </tr>
+            <tr align="left">
+                <th>
+                    <label for="idmail">E-mail:</label>
+                </th>
+                <td>
+                    <input id="idmail" type="text" name="email" placeholder="Escriu el teu email" size="30" maxlength="30"
+                        required>
+                </td>
+            </tr>
+            <tr align="left">
+                <th>
+                    <label for="idnaix">Data de Naixament:</label>
+                </th>
+                <td>
+                    <input id="idnaix" type="date" name="date" value="1999-01-01">
+                </td>
+            </tr>
+            <tr align="left">
+                <th>
+                    <label for="idcolorpref">Color Preferit:</label>
+                </th>
+                <td>
+                    <input id="idcolorpref" type="color" name="color" value="#ff0000">
+                </td>
+            </tr>
+
+            <!--cuadrats-->
+
+            <tr>
+                <th rowspan="7">Mòduls Preferits de SMX2</th>
+            </tr>
+            <tr>
+                <td>
+                    <input id="idm4" type="checkbox" name="M4">
+                    <label for="idm4">M4 - Sistemes Operatius en Xarxa</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="idm6" type="checkbox" name="M6">
+                    <label for="idm6">M6 - Seguretat Informàtica</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="idm7" type="checkbox" name="M7">
+                    <label for="idm7">M7 - Serveis en Xarxa</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="idm8" type="checkbox" name="M8" checked>
+                    <label for="idm8">M8 - Aplicacions Web</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="idm10" type="checkbox" name="M10">
+                    <label for="idm10">M10 - Empresa i Iniciativa Emprenedora</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="idm11" type="checkbox" name="M11">
+                    <label for="idm11">M11 - Anglès Tècnic</label>
+                </td>
+            </tr>
+
+            <!--cercles-->
+
+            <tr>
+                <th rowspan="6">Que voldries fer després d'acabar SMX?</th>
+            </tr>
+            <tr>
+                <td>
+                    <input id="DAM" type="radio" name="radio">
+                    <label for="DAM">DAM</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="ASIX" type="radio" name="radio">
+                    <label for="ASIX">ASIX</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="EI" type="radio" name="radio">
+                    <label for="EI">Enginyeria Informàtica</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="TREBALLAR" type="radio" name="radio">
+                    <label for="TREBALLAR">Treballar</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="RES" type="radio" name="radio">
+                    <label for="RES">Res</label>
+                </td>
+            </tr>
+
+            <tr align="left">
+                <th>
+                    <label>Què t'està semblant el lenguatge HTML?</label>
+                </th>
+                <td>
+                    <select>
+                        <option value="agradatmolt">M'ha agradat molt</option>
+                        <option value="agradat" selected>M'ha agradat</option>
+                        <option value="nifunifa">Ni fu ni fa</option>
+                        <option value="nogaire">No m'ha agradat gaire</option>
+                        <option value="nogens">No m'ha agradat gens</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="left">
+                <th>
+                    <label for="idnota">Nota que esperes d'aquesta etnrega</label>
+                </th>
+                <td>
+                    <input id="idnota" name="nota" type="number" min="0" max="10">
+                </td>
+            </tr>
+            <tr align="left">
+                <th>
+                    <label for="idpassword">Ecriu un password per xifrar l'entrega:</label>
+                </th>
+                <td>
+                    <input id="idpassword" type="password" placeholder="Escriu un password" size="10" maxlength="10">
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input id="idenvia" name="enviar" type="submit" value="Enviar Respostes!">
+                    <input id="idreset" name="reset" type="reset" value="Natejar formulari">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>
